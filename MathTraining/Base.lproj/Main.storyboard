@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="121.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="aHZ-9c-tiL">
             <objects>
-                <viewController id="UDj-Et-gId" sceneMemberID="viewController">
+                <viewController id="UDj-Et-gId" customClass="ResultViewController" customModule="MathTraining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oet-P7-2A2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,6 +209,9 @@
                                             <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                             <color key="titleShadowColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Iue-L8-aGH" kind="unwind" unwindAction="backToTitleWithSender:" id="hJF-XI-vxI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -218,8 +221,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rfh-Wy-Csv"/>
                     </view>
+                    <connections>
+                        <outlet property="mssagaLabel" destination="HYF-3r-pwl" id="6UQ-mL-Lj6"/>
+                        <outlet property="resultLabel" destination="40U-jm-MlQ" id="PlG-bQ-fUB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pR-hU-K0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Iue-L8-aGH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1615.9420289855075" y="113.83928571428571"/>
         </scene>

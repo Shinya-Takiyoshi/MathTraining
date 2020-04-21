@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    // 戻るボタン
+    @IBAction func backToTitle(sender : UIStoryboardSegue){
+        
+    }
 }
 
